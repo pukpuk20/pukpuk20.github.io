@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "ru"/>
+<head>
+	<meta charset = "UFT-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>Большой Пук</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+<script type="text/javascript">
+function soundClick() {
+  var audio = new Audio(); // Создаём новый элемент Audio
+  audio.src = 'пук2.mp3'; // Указываем путь к звуку "клика"
+  audio.autoplay = true; // Автоматически запускаем
+  }
+  
+  var count = 0;
+  function clicker() { 
+  document.getElementById('clickCount').innerHTML = count++; 
+  }
+</script>
+<center>
+<div id="clickCount"> 0 </div>
+</center>
+<center>
+<button onclick="soundClick() ; clicker()">
+<img src="жопа.jpg">
+</button>
+<script type="text/javascript">
+</script>
+</center>
+
+

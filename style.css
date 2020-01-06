@@ -1,0 +1,28 @@
+button{
+	border: none;
+	border-radius:  100px; 
+	text-decoration: none; 
+	display: inline-block;
+	padding: 15px 32px; 
+	background-color: #FFFFFF;
+	margin-top: 70px;
+	}
+	
+#clickCount{
+	font-size: 170px;
+	margin-top: 50px;
+	font-weight: 900;
+	
+	
+}
+
+img:hover{
+	width: 1000px;
+	height: 700px;
+	
+}
+
+img{
+	
+}
+	
