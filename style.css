@@ -1,13 +1,22 @@
 button{
-	border: none;
-	border-radius:  100px; 
-	text-decoration: none; 
 	display: inline-block;
-	padding: 15px 32px; 
-	background-color: #FFFFFF;
-	margin-top: 70px;
-	}
-	
+	color: #F86400;
+	font-weight: 700;
+	user-select: none;
+	padding: .5em 2em;
+	outline: none;
+	border: 2px solid;
+	border-radius: 1px;
+	transition: 0.2s;
+	width: 500px;
+	height: 100px;
+	background-color: #FFD9AA;
+	font-size: 25px;
+}
+
+button:hover { background: white ; }
+button:active { background: #F0F0F0;}
+
 #clickCount{
 	font-size: 170px;
 	margin-top: 50px;
@@ -16,13 +25,11 @@ button{
 	
 }
 
-img:hover{
-	width: 1000px;
-	height: 700px;
-	
+#myImg{
+	margin-top:5%;
+	margin-left: 10%;
 }
 
-img{
-	
-}
+
+
 	

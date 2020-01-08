@@ -15,21 +15,19 @@ function soundClick() {
   audio.src = 'пук2.mp3'; // Указываем путь к звуку "клика"
   audio.autoplay = true; // Автоматически запускаем
   }
-  
-  var count = 0;
-  function clicker() { 
-  document.getElementById('clickCount').innerHTML = count++; 
+function soundClick1() {
+  alert("Больше не воняй!!!")
   }
+
 </script>
 <center>
-<div id="clickCount"> 0 </div>
+<img id="myImg" src="жопа2.jpg" alt="img">
 </center>
+
 <center>
-<button onclick="soundClick() ; clicker()">
-<img src="жопа.jpg">
-</button>
-<script type="text/javascript">
-</script>
+<button onclick="document.getElementById('myImg').src='жопа.jpg'; soundClick()">Пукнуть</button>
+<button onclick="document.getElementById('myImg').src='жопа2.jpg';soundClick1()">Проветрить</button>
 </center>
+
 
 
