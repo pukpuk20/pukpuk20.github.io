@@ -6,12 +6,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<title>Большой Пук</title>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript">
+function soundClick() {
+  var audio = new Audio(); // Создаём новый элемент Audio
+  audio.src = 'пук2.mp3'; // Указываем путь к звуку "клика"
+  audio.autoplay = true; // Автоматически запускаем
+  }
+</script>
 </head>
 
 	<body>
-		<center>
-			<p><a href="#" class="rollover"> </a></p>
-		</center>
+		<div class="zopa_block">
+			<a class="rollover" onclick="soundClick()"></a>
+		</div>
 			
 
 
