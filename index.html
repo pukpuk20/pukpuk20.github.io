@@ -6,18 +6,53 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<title>Большой Пук</title>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
+alert( randomInteger(1, 5) );
+
+</script>
+
+
+
 <script type="text/javascript">
 function soundClick() {
   var audio = new Audio(); // Создаём новый элемент Audio
   audio.src = 'пук2.mp3'; // Указываем путь к звуку "клика"
   audio.autoplay = true; // Автоматически запускаем
   }
+
 </script>
 </head>
 
 	<body>
+		<div class="header">
+			<div class="container">
+				<div class="header_inner">
+					<h2 class="logo_text">ПОРТАЛ ПУКА</h2>
+					<div class="menu">
+						<ul class="table_menu">
+							<li class="cells" href="">Просто Пук</li>
+							<a class="cells" href="gameclicker.html"> Кликер Пука</a>
+							<li class="cells">Скоро</li>
+							<li class="cells">Скоро</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 		<div class="zopa_block">
-			<a class="rollover" onclick="soundClick()"></a>
+			<center>
+				<a class="rollover" id="logo" onclick="soundClick() , clocki()"></a>
+			</center>
+		</div>
+
+		<div class="down">
+			<div class="container_down">
+				<div class="header_inner">
+					<a href="https://t.me/it_bllog" class="text_company">ООО "WIT"</a>
+				</div>
+			</div>
 		</div>
 			
 

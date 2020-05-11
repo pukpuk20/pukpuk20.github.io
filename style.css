@@ -1,6 +1,29 @@
+body{
+	margin: 0 ;
+	margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin:0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.header_inner {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
 .zopa_block{
-	margin-top: 150px;
-    margin-left: 600px;
+	height: 584px;
+	width: 800px;
+	text-align: center;
+	margin-left: 600px;
 }
 
 
@@ -15,11 +38,166 @@
     cursor: pointer;
     transition-duration: 0.1s; 
     margin-top: 150px;
-    margin-left: 20px; 
+    margin-left: 20px;
+     
     
    }
-
 .rollover:active{
-	background-image: url(жоп3.jpg);
+    animation: button 2s ;
+    zoom: 1.01;
+    
+}
+
+@keyframes button {
+    1% { background-image: url(жоп3.jpg); }   
+    90% { background-image: url(жопа2.jpg); }
+   }
+
+.header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background-color: #5DCEC6;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	
+	
+}
+
+.logo_text{
+	height: 106px;
+	width:317px;
+	font-size: 40px;
+	padding-top: 20px;
+	cursor: pointer;
+	font-family: 'Modak', cursive;
+	color:#00665E;
+}
+
+.down{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 837px;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background-color: #5DCEC6;
+}
+
+.text_company{
+	padding-left: 950px; 
+	padding-top: 45px;
+	color:#00665E;
+	cursor: pointer;
+	text-decoration: none;
+	
 
 }
+
+.text_company:hover{
+	text-decoration: underline;
+}
+
+.cells{
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 30px;
+	margin-top: 20px;
+	color: #00665E;
+	text-decoration: none;
+	transition: color, .2s, background-color;
+	font-family:'Modak', cursive;
+	font-size: 19px;
+
+}
+
+.clicker_block{
+	height: 100px;
+	width: 900px;
+	text-align: center;
+	margin-left: 550px;
+	margin-top: 600px;
+	display: inline-block;
+	position:relative;
+
+	
+
+	
+}
+
+.less{
+	position: relative;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 13px;
+    letter-spacing: 0.01em;
+    border-radius: 8px;
+    border: 1px solid;
+    background-color: #7A7A7A;
+    height: 50px;
+	width: 300px;
+	font-size: 20px;
+	
+	
+	
+}
+
+.more{
+	position: relative;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    border-radius: 8px;
+    border: 1px solid;
+    background-color: #7A7A7A;
+	height: 50px;
+	width: 300px;
+	font-size: 20px;
+	
+}
+
+.less:active{
+	background-color: #52606e;
+}
+
+.more:active{
+	background-color: #52606e;
+}
+
+#clicker_less{
+	height: 70px;
+	width: 500px; 
+	margin-left: 200px;
+	border-radius: 16px;
+	background-color: #5DCEC6;
+
+
+
+
+}
+
+#text_change{
+	padding-top: 10px;
+	color:#00665E;
+	font-size: 30px;
+	height: 70px;
+	width: 500px; 
+	border-radius: 16px;
+	background-color: #5DCEC6;
+	font-family: 'Yanone Kaffeesatz', sans-serif; 
+	
+}
+
+.result{
+	

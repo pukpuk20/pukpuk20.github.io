@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "ru"/>
+<head>
+	<meta charset = "UFT-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>Большой Пук</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+
+</head>
+<script type="text/javascript">
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+function clicker_less(){
+	l = getRandomInt(10)
+	var p;
+	p = document.getElementById('text_change');
+	if(l<=5){
+		p.style.color = "#fff";
+		p.style.padding = "10px";
+		p.style.background = "#45AD00";
+		p.innerHTML = 'Выпало ' + l;
+}
+	else{
+		p.style.color = "#fff";
+		p.style.background = "#E64B5E";
+		p.innerHTML = 'Выпало ' + l;
+	}
+}
+
+function clicker_more(){
+	l = getRandomInt(10)
+	var p;
+	p = document.getElementById('text_change');
+	var min = 0;
+    document.getElementById("result")
+	if(l>=5){
+		p.style.color = "#fff";
+		p.style.padding = "10px";
+		p.style.background = "#45AD00";
+		p.innerHTML = 'Выпало ' + l;
+		min.innerHTML = min + 10;
+}
+	else{
+		p.style.color = "#fff";
+		p.style.background = "#E64B5E";
+		p.innerHTML = 'Выпало ' + l;
+	}
+}
+</script>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="header_inner">
+					<h2 class="logo_text">ПОРТАЛ ПУКА</h2>
+					<div class="menu">
+						<ul class="table_menu">
+							<a class="cells" href="index.html">Просто Пук</a>
+							<a class="cells" href="gameclicker.html"> Кликер Пука</a>
+							<li class="cells">Скоро</li>
+							<li class="cells">Скоро</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="clicker_block">
+			<div class="result" onclick="clicker_more()"></div>
+			<input type="button" class="less" value=" Меньше " onclick="clicker_less()">
+			<input type="button" class="more" value=" Больше " onclick="clicker_more()">
+			<div id="clicker_less">
+				<p id=text_change>Меньше пяти - Меньше</br>Больше пяти - Больше</p>
+			</div>
+
+			
+		</div>
+
+		<div class="down">
+			<div class="container_down">
+				<div class="header_inner">
+					<a href="https://t.me/it_bllog" class="text_company">ООО "WIT"</a>
+				</div>
+			</div>
+		</div>
