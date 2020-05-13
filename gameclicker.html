@@ -17,10 +17,10 @@ function getRandomInt(max) {
 }
 
 function clicker_less(){
-	l = getRandomInt(10)
+	l = getRandomInt(100)
 	var p;
 	p = document.getElementById('text_change');
-	if(l<=5){
+	if(l<=50){
 		p.style.color = "#fff";
 		p.style.padding = "10px";
 		p.style.background = "#45AD00";
@@ -34,12 +34,12 @@ function clicker_less(){
 }
 
 function clicker_more(){
-	l = getRandomInt(10)
+	l = getRandomInt(100)
 	var p;
 	p = document.getElementById('text_change');
 	var min = 0;
     document.getElementById("result")
-	if(l>=5){
+	if(l>=50){
 		p.style.color = "#fff";
 		p.style.padding = "10px";
 		p.style.background = "#45AD00";
